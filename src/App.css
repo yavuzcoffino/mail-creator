@@ -1,0 +1,67 @@
+#rot{
+  width: 100vw;
+  height:auto;
+  background-color:#efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  padding:1em;
+}
+.image{
+  position:relative;
+}
+.image img{
+  width:512px;
+  height:1100px;
+}
+.controller{
+  padding:10px;
+}
+.controller form{
+  display: flex;
+  flex-direction: column;
+}
+.controller input{
+  padding:1em;
+}
+.box-area{
+  opacity:1;
+  position:absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow:hidden;
+  z-index:10;
+}
+.box{
+  opacity: 0.6;
+  height: 20px;
+  box-shadow:inset 1px 1px 1px #000000;
+}
+.box a{
+  display: block;
+  width: 100%;
+  height:100%;
+  background-color: blue;
+}
+.box.selected{
+  background-color: yellow;
+}
+.box:focus{
+  background-color: blue;
+}
+
+.box:hover{
+  background-color: #fff;
+  opacity:0.7
+}
+
+.link-1{
+  background-color: red !important;
+}
